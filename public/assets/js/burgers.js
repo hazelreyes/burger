@@ -1,5 +1,5 @@
 $(function() {
-  $(".change-devoured").on("click", function(event) {
+  $(".change-devoured").on("click", function() {
     var id = $(this).data("id");
     var newDevoured = $(this).data("newdevoured");
 
@@ -17,11 +17,11 @@ $(function() {
     });
   });
 
-  $("#add-burger").on("submit", function(event) {
+  $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
     var newBurger = {
-      burger_name: $("#ca")
+      burger_name: $("#newburg")
         .val()
         .trim(),
     };
@@ -35,19 +35,4 @@ $(function() {
       location.reload();
     });
   });
-
-  // $(".delete-cat").on("click", function(event) {
-  //   var id = $(this).data("id");
-
-  //   // Send the DELETE request.
-  //   $.ajax("/api/cats/" + id, {
-  //     type: "DELETE"
-  //   }).then(
-  //     function() {
-  //       console.log("deleted cat", id);
-  //       // Reload the page to get the updated list
-  //       location.reload();
-  //     }
-  //   );
-  // });
 });

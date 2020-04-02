@@ -1,15 +1,86 @@
-/* need to fix css stylings */
-
-.label {
-  font-weight: bold;
+body {
+  text-align: center;
+  background-color: rgb(252, 126, 24);
 }
 
-.create-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(238, 17, 17);
+  font-size: xx-large;
+}
+
+.burger-and-title {
+  text-align: center;
+}
+
+.stacking-burger {
+  margin-top: 30px;
+  content: url("../img/burger.gif");
+  alt: "stacking burger";
+  width: 120px;
+  height: 130px;
+}
+
+.whole-burgers,
+.devoured-burgers {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .form-group {
-  margin-bottom: 5px;
+  text-align: center;
+}
+
+#newburg {
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  height: 80px;
+  width: 420px;
+}
+
+.whole-burgers-input {
+  text-align: center;
+  height: 45px;
+  width: 300px;
+  margin-bottom: 15px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.change-devoured {
+  margin-left: 25px;
+  height: 30px;
+  width: 90px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.devoured-burgers-input {
+  width: 400px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.submit-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#add-burger {
+  padding: 7px;
+  background-color: blue;
+  color: white;
+  font-size: medium;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
 }

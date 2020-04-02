@@ -1,5 +1,9 @@
-<input value="{{burger_name}}"></input>
+<li>
+	<input class="whole-burgers-input" value="{{id}}. {{burger_name}}"></input>
 
+	{{#if devoured}}
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}EAT IT!{{else}}EATEN{{/if}}
+		Devour It!
 	</button>
+	{{/if}}
+</li>
